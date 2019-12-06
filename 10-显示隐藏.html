@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{margin:0;padding:0;}
+        .box1,.box3{width:400px;height:400px;background:#00f;margin:40px;}  
+        .box2{width:100px;height:100px;background:#f00;display:none;}
+        .box1:hover .box2{display: block;}
+        /* display:none 标签消失且不占空间 */
+        .box4{width:100px;height:100px;background:#f00;visibility: hidden;}
+        .box3:hover .box4{visibility: visible;}
+        /* visbiliy:hidden标签消失占空间 */
+
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+        <p>阿达瓦大大多阿达瓦</p>
+    </div>
+    <div class="box3">
+        <div class="box4"></div>
+        <p>阿达瓦大大多阿达瓦</p>
+    </div>
+</body>
+</html>

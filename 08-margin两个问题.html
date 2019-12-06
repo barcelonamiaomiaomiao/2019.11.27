@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{margin:0;padding:0;}
+        ul{list-style:none ;}
+        .box1{width:400px;height:400px;background:#f00;overflow: hidden;}
+        .box2{width:100px;height:100px;background:#0f0;margin-top:50px;}
+        /* 给子类盒子设置的 margin-top   作用在了 父类盒子身上,需要给父元素添加overflow:hidden */
+        li{width:200px;height:50px;background: #00f;margin:20px;}
+        .s1{margin:10px 20px 40px}
+        /* margin在垂直方向上的值会出现重叠现象,取最大值 */
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+    <ul>
+        <li></li>
+        <li class="s1"></li>
+        <li></li>
+    </ul>
+</body>
+</html>
